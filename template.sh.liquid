@@ -23,6 +23,8 @@ echo --------------------START-----------------------------
 ## following markup
 ## { % stage_in demo_steps %}
 ## NOTICE - remove space between { and %
+
+{% stage_in temp.html %} 
 echo --------------------END-------------------------------
 
 ## Load ruby module and execute calculation
@@ -43,6 +45,7 @@ echo --------------------END-------------------------------
 echo Uploading results
 echo --------------------START-----------------------------
 {% stage_out hello.txt %}
+{% stage_out temp.html %}
 
 echo --------------------END-------------------------------
 echo Finish
